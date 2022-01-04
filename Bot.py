@@ -23,7 +23,7 @@ def main():
     my_bot = Updater(telegramApiUrl)
 
     my_bot.dispatcher.add_handler(CommandHandler('start', sms))
-    # обработка функции повторения
+    # обработка функции повторения parrot
     my_bot.dispatcher.add_handler(MessageHandler(Filters.text, parrot))
 
     my_bot.start_polling()
